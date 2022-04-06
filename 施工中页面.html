@@ -1,0 +1,39 @@
+<title>施工中页面</title>
+<div class="showTime"></div>
+<script>
+  var t = null;
+  t = setTimeout(time, 1000); 
+  function time() {
+    clearTimeout(t); 
+    dt = new Date();
+    var y = dt.getFullYear();
+    var mt = dt.getMonth() + 1;
+    var day = dt.getDate();
+    var h = dt.getHours(); 
+    var m = dt.getMinutes(); 
+    var s = dt.getSeconds(); 
+    document.querySelector(".showTime").innerHTML =
+      "当前时间:" +
+      y +
+      "年" +
+      mt +
+      "月" +
+      day +
+      "日/" +
+      h +
+      "时" +
+      m +
+      "分" +
+      s +
+      "秒";
+    t = setTimeout(time, 1000); 
+  }
+</script>
+您的浏览器内核
+<script>
+document.write(navigator.userAgent); 
+</script><br>
+测试界面，由小永高吖创建<br>
+页面正在施工中<br>
+可莉/早柚/宵宫，世界第一可爱，哒哒哒～<br>
+<img src="https://pan.bilnn.cn/api/v3/file/sourcejump/1MnrOmCw/D_5z9pEqhIAtKB84ZN6k93D5o6vRX5hAcbecch41HuY*"><br>
