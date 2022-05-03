@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>下载选择页</title>
+  <meta name="description" content="Some ideas for modern button styles and effects">
+  <meta name="keywords" content="button, effect, hover, style, inspiration, web design">
+  <meta name="author" content="Codrops">
+  <script type="text/javascript" src="https://yoimiyap.github.io/js3.js"></script>
+  <script type="text/javascript" src="https://yoimiyap.github.io/js2.js"></script>
+  <script type="text/javascript" src="https://yoimiyap.github.io/js1.js"></script>
+  <link href="https://pic.imgdb.cn/item/6270e0d7239250f7c5a64316.png" mce_href="favicon.ico" rel="shortcut icon" type="img/15.0904011.ico">
+  <link rel="stylesheet" href="https://yoimiyap.github.io/css1.css">
+  <link rel="stylesheet" href="https://yoimiyap.github.io/css2.css">
+      <script type="text/javascript">
+  <script type="text/javascript">
+   $(document).ready(function() {
+  $('p#roloadText').beatText({isAuth:true,beatHeight:"1em",isRotate:false,upTime:100,downTime:100});
+  });
+  </script>
+ </head>
+ <body>
+
+<!-- 不知道有没有哪个屑fw发现点这张图片可以让背景音乐暂停和播放 -->
+  <div class="logo" id="a" onclick="a();" title="▶">
+    <img src="https://pic.imgdb.cn/item/6270e0d7239250f7c5a64316.png">
+   </div>
+   <br><br>
+   <div class="container">
+  <p id="roloadText1">下载内容选择页</p>
+  <p id="roloadText2">单击下方按钮来选择</p>
+ </div>
+
+<!-- 这是基岩版资源包，希望没有哪个java的大冤种下载到了以后反馈用不了，我不管 -->
+<!-- 当然，之后可能会适配java版，不过按作者咕咕咕的看法来说再等亿段时间吧[doge] -->
+<div class="box bg-1">
+<!-- 点击下方按钮选择要下载的文件 -->
+ <button class="button button--antiman button--round-l button--text-medium" onclick="window.open('https://yoimiyap.github.io/xiaoyonggaoyadeziyuanbao_mcpack')"><span>下载mcpack文件</span></button>
+ <button class="button button--antiman button--round-l button--text-medium" onclick="window.open('https://yoimiyap.github.io/xiaoyonggaoyadeziyuanbao_zip')"><span>下载zip文件</span></button>
+<!-- 估计谁点开下面的发现为啥音频那么大会吃一惊吧 -->
+ <button class="button button--antiman button--round-l button--text-medium" onclick="window.open('https://pan.ucyclub.com/s/5BIQ')"><span>下载背景音乐</span></button>
+<!-- 下面的没啥卵用，删了 -->
+<!-- <button class="button button--antiman button--round-l button--text-medium" onclick="window.open('https://pic.imgdb.cn/item/6270d0b5239250f7c57e4d0c.png')"><span>新标签页打开上方图片</span></button> -->
+</div>
+ 
+ <div class="body_buttom">
+
+<!-- 这音乐可有九个半小时左右，不知道哪个屑fw能完整听完，反正不能调进度条 -->
+<audio autoplay loop id="music">
+<source src="https://pan.ucyclub.com/api/v3/file/source/1929/audio.mp3?sign=T23oIMlzSI0jfZW2VrhPv18TBiT2SXRT82N_QnSUmJc%3D%3A0" type="audio/mpeg">
+</audio>
+<script>   
+   function a(){
+     var audio = document.getElementById('music'); 
+     if(audio.paused){                 
+         audio.play();audio.play();//播放  
+     }
+     else{
+          audio.pause();//暂停
+     } 
+   }
+</script>
+ </div></body>
+</html>
