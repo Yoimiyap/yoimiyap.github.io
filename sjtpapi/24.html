@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!-- 网页标题 -->
+<title>随机图片api</title>
+<!-- 网页图标 -->
+<link href="https://pic.imgdb.cn/item/6270e0d7239250f7c5a64316.png" mce_href="favicon.ico" rel="shortcut icon" type="img/15.0904011.ico">
+<!-- 图片自适应组件 -->
+<style>
+img {
+    max-width: 100%;
+    height: auto;
+}
+</style>
+<!-- 兼容ie9 -->
+<!--[if lt IE 9]>
+<script src="https://yoimiyap.github.io/html5shiv.min.js"></script>
+<![endif]-->
+<!-- 自动刷新，单位为秒 -->
+<meta http-equiv="refresh" content="30">
+</head>
+<body>
+<!-- 页头返回 -->
+<h3><a href="https://yoimiyap.github.io/sjtpapi">点击此处返回索引页</a><h3>
+<!-- 实时时间 -->
+<div class="showTime"></div>
+<script>
+  var t = null;
+  t = setTimeout(time, 1000); 
+  function time() {
+    clearTimeout(t); 
+    dt = new Date();
+    var y = dt.getFullYear();
+    var mt = dt.getMonth() + 1;
+    var day = dt.getDate();
+    var h = dt.getHours(); 
+    var m = dt.getMinutes(); 
+    var s = dt.getSeconds(); 
+    document.querySelector(".showTime").innerHTML =
+      "当前时间为:" +
+      y +
+      "年" +
+      mt +
+      "月" +
+      day +
+      "日" +
+      h +
+      "时" +
+      m +
+      "分" +
+      s +
+      "秒";
+    t = setTimeout(time, 1000); 
+  }
+</script>
+<h2>提供随机图片，每过30秒刷新一次，看到喜欢的自行保存，尽快哦，也可以在自己的网页或者论坛签名档调用<br/>
+当前页api地址：https://api.yimian.xyz/img?type=moe&size=1920x1080</h2>
+<img src="https://api.yimian.xyz/img?type=moe&size=1920x1080">
+</body>
+<!-- 背景图片 -->
+<body background="https://pic.imgdb.cn/item/62d2ea45f54cd3f93771c4d2.jpg"></body>
+</html>
